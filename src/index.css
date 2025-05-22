@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  height: 100vh;
+  background-color: #4ab9a3; /* fundo preto, estilo jogo */
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .menu-button-image {
+    width: 150px;
+  }
+
+  .menu-container {
+    gap: 16px;
+  }
+
+  .menu-container button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+};
+@media (max-width: 600px) {
+  .hamburger-button {
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 20px;
+  }
+
+  .hamburger-button .bar {
+    height: 3px;
+  }
+}
+
+/* Container principal do menu */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Botões do menu */
+.menu-container button {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 5px;
+}
+
+.menu-container button:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-button-image {
+  width: 200px; /* ajuste o tamanho como preferir */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-button-image:hover {
+
+  transform: scale(1.05);
+}
+
+/* seta menu */
+
+.menu-arrow {
+  position: absolute;
+  left: -24px; /* distância da seta para o botão, ajuste como quiser */
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  pointer-events: none; /* seta não bloqueia clique */
+}
+
+.menu-button-wrapper:hover .menu-arrow {
+  opacity: 1;
+}
+
+
+
+/* .back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.back-button img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.back-button:hover {
+  transform: scale(0.8);
+} */
+
+
+
+.page-container {
+  background-color: #5dc190;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  position: relative;
+}
+
+.page-content {
+  padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
