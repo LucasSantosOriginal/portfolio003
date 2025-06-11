@@ -9,7 +9,7 @@
 
 /* Corpo da página */
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #4ab9a3; /* fundo preto, estilo jogo */
   color: white;
   font-family: "Pixelify Sans", sans-serif;  display: flex;
@@ -31,6 +31,11 @@ body {
     font-size: 1.2rem;
     padding: 10px 20px;
   }
+  .page-content p {
+    font-size: 1rem;
+    padding: 0 16px;
+    text-align: left;
+  }
 };
 @media (max-width: 600px) {
   .hamburger-button {
@@ -45,6 +50,12 @@ body {
   }
 }
 
+/* MENU TITULO */
+.menu-title {
+  text-align: center;
+  color: white;
+  text-shadow: black 1px 3px 4px;
+}
 /* Container principal do menu */
 .menu-container {
   display: flex;
@@ -74,11 +85,14 @@ body {
   width: 200px; /* ajuste o tamanho como preferir */
   cursor: pointer;
   transition: transform 0.2s ease;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.7));
 }
 
 .menu-button-image:hover {
 
   transform: scale(1.05);
+  filter: drop-shadow(2px 4px 4px rgba(206, 205, 205, 0.7));
+
 }
 
 /* seta menu */
@@ -139,10 +153,61 @@ body {
 
 .page-content {
   padding: 32px;
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.page-content p {
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+/* GIF ABOUT */
+
+.gif-about {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+
+/* PROJECT */
+.projects-background {
+  background-color: #002263 !important;
+}
+
+
+/* PIXEL ART */
+
+.pixel-art {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  text-shadow: black 3px 1px;
+}
+
+.pixel-art h3 {
+  margin: 40px;
+}
+
+.pixel-art img {
+  box-shadow: black 3px 5px 8px ;
+}
+
+.smoking-img {
+  width: 300px;
+  height: 250px;
+}
+
+.page-content figcaption {
+  margin-top: 4px;
 }

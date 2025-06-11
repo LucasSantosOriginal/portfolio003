@@ -13,7 +13,6 @@ export default function Menu() {
   const navigate = useNavigate();
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null); // controla hover
-
   const buttons = [
     { src: botaoAbout, alt: "About Me", route: "/about" },
     { src: botaoProject, alt: "My Projects", route: "/projects" },
@@ -30,6 +29,7 @@ export default function Menu() {
 
   return (
     <div className="menu-container">
+      <h1 className="menu-title">LUCAS WORLD</h1>
       {isTransitioning && <PixelTransition />}
       {buttons.map((btn, i) => (
         <div

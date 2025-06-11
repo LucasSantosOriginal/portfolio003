@@ -4,6 +4,7 @@
     cursor: pointer;
     padding: 8px;
     transition: transform 0.2s ease;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.7));
   }
   
   .back-button img {
@@ -13,4 +14,5 @@
   
   .back-button:hover {
     transform: scale(0.8);
+    filter: drop-shadow(2px 4px 4px rgba(206, 205, 205, 0.7));
   }

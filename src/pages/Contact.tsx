@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
 
       <main className="page-content">
         <h1>Contact me</h1>
-        <p>...</p>
+        <p>contato.lucasazevedo1@gmail.com</p>
       </main>
     </div>
   );

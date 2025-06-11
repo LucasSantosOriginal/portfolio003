@@ -37,7 +37,9 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
 
   useEffect(() => {
     const pixelGridEl = pixelGridRef.current;
-    if (!pixelGridEl) return;
+    if (!pixelGridEl) {
+      return;
+    }
 
     pixelGridEl.innerHTML = "";
 
